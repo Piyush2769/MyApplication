@@ -93,7 +93,7 @@
             android:id="@+id/bright"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/right" />
+            android:background="@drawabl    e/right" />
 
     </LinearLayout>
 
