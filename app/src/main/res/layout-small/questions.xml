@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/questions_ll"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/topbottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvxx"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XX/" />
+
+        <TextView
+            android:id="@+id/tvyy"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YY" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/middle"
+        android:orientation="vertical"
+        android:layout_weight="80">
+
+        <TextView
+            android:id="@+id/tvquestion"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Questions" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:padding="15dp"
+                    android:textColor="#000"
+                    android:id="@+id/tvanswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Press a button for answers" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/topbottom"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_weight="12">
+
+        <Button
+            android:id="@+id/bleft"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/left" />
+
+        <Button
+            android:id="@+id/banswers"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/a_selector" />
+
+        <Button
+            android:id="@+id/bright"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/right" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
